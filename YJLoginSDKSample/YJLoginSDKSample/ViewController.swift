@@ -30,8 +30,8 @@ class ViewController: UIViewController {
 
         whiteButton = LoginButton()
         whiteButton.scopes = [.openid, .profile]
-        whiteButton.nonce = "<nonce>"
-        whiteButton.codeChallenge = "<code_challenge>"
+        whiteButton.nonce = "nonce"
+        whiteButton.codeChallenge = "E9Melhoa2OwvFrEMTJguCHaoeK1t8URWbuGJSstw-cM"
         whiteButton.presentingViewController = self
         whiteButton.optionalParameters = OptionalParameters(bail: true)
         whiteButton.delegate = self

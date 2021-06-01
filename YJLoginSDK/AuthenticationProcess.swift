@@ -124,12 +124,12 @@ internal class AuthenticationProcess: AuthenticationProcessProtocol {
         }
 
         guard request.redirectUri.scheme == url.scheme &&
-                request.redirectUri.user == url.user &&
-                request.redirectUri.password == url.password &&
-                request.redirectUri.host == url.host &&
-                request.redirectUri.port == url.port &&
-                request.redirectUri.path == url.path else {
-            return false
+            request.redirectUri.user == url.user &&
+            request.redirectUri.password == url.password &&
+            request.redirectUri.host == url.host &&
+            request.redirectUri.port == url.port &&
+            request.redirectUri.path == url.path else {
+                return false
         }
         ua.dismiss()
         self.onFinish?(self.convertLoginError(url: url, error: nil))
@@ -139,9 +139,9 @@ internal class AuthenticationProcess: AuthenticationProcessProtocol {
     func start(request: AuthenticationRequest) {
         self.request = request
         guard let url = request.requestUrl,
-              let scheme = request.requestUrl?.scheme else {
-            onFinish?(.failure(.undefinedError(error: nil)))
-            return
+            let scheme = request.requestUrl?.scheme else {
+                onFinish?(.failure(.undefinedError(error: nil)))
+                return
         }
 
         ua.present(url: url, callbackScheme: scheme, viewController: viewController) { result in

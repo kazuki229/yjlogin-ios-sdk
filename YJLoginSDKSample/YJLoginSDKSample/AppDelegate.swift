@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // swiftlint:disable:next force_unwrapping
-        LoginManager.shared.setup(clientId: "<client_id>", redirectUri: URL(string: "<redirect_uri>")!)
+        LoginManager.shared.setup(clientId: "dj00aiZpPXo0eldEYW1zRktZMiZzPWNvbnN1bWVyc2VjcmV0Jng9MjY-", redirectUri: URL(string: "yj-2kh5l:/")!)
         return true
     }
 

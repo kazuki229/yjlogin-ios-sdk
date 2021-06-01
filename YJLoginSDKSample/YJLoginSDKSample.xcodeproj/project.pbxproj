@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,23 +12,10 @@
 		B1698BB622B922750024DC7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1698BB422B922750024DC7F /* Main.storyboard */; };
 		B1698BB822B922760024DC7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1698BB722B922760024DC7F /* Assets.xcassets */; };
 		B1698BBB22B922760024DC7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1698BB922B922760024DC7F /* LaunchScreen.storyboard */; };
-		B1698BD022B925960024DC7F /* YJLoginSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1698BCF22B925960024DC7F /* YJLoginSDK.framework */; };
-		B1698BD122B925960024DC7F /* YJLoginSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B1698BCF22B925960024DC7F /* YJLoginSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B172EE9A2665E227001D7CC8 /* YJLoginSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D06CBA2665CF7A006E8F52 /* YJLoginSDK.xcframework */; };
+		B188C4B12665DF7F00D83FEF /* input.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = B188C4B02665DF7F00D83FEF /* input.xcfilelist */; };
+		B188C4B32665DFA100D83FEF /* output.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = B188C4B22665DFA100D83FEF /* output.xcfilelist */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		B1698BD222B925960024DC7F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				B1698BD122B925960024DC7F /* YJLoginSDK.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B1698BAD22B922750024DC7F /* YJLoginSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJLoginSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,7 +25,10 @@
 		B1698BB722B922760024DC7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1698BBA22B922760024DC7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1698BBC22B922760024DC7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B1698BCF22B925960024DC7F /* YJLoginSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YJLoginSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B188C4AB2665DF3400D83FEF /* YJLoginSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YJLoginSDK.framework; path = Carthage/Build/iOS/YJLoginSDK.framework; sourceTree = "<group>"; };
+		B188C4B02665DF7F00D83FEF /* input.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = input.xcfilelist; sourceTree = "<group>"; };
+		B188C4B22665DFA100D83FEF /* output.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = output.xcfilelist; sourceTree = "<group>"; };
+		B1D06CBA2665CF7A006E8F52 /* YJLoginSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = YJLoginSDK.xcframework; path = Carthage/Build/YJLoginSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1698BD022B925960024DC7F /* YJLoginSDK.framework in Frameworks */,
+				B172EE9A2665E227001D7CC8 /* YJLoginSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +46,6 @@
 		B1698BA422B922750024DC7F = {
 			isa = PBXGroup;
 			children = (
-				B1698BCF22B925960024DC7F /* YJLoginSDK.framework */,
 				B1698BAF22B922750024DC7F /* YJLoginSDKSample */,
 				B1698BAE22B922750024DC7F /* Products */,
 				EC6DCC7B23057112008CEB27 /* Frameworks */,
@@ -80,6 +69,8 @@
 				B1698BB722B922760024DC7F /* Assets.xcassets */,
 				B1698BB922B922760024DC7F /* LaunchScreen.storyboard */,
 				B1698BBC22B922760024DC7F /* Info.plist */,
+				B188C4B02665DF7F00D83FEF /* input.xcfilelist */,
+				B188C4B22665DFA100D83FEF /* output.xcfilelist */,
 			);
 			path = YJLoginSDKSample;
 			sourceTree = "<group>";
@@ -87,6 +78,8 @@
 		EC6DCC7B23057112008CEB27 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B188C4AB2665DF3400D83FEF /* YJLoginSDK.framework */,
+				B1D06CBA2665CF7A006E8F52 /* YJLoginSDK.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -101,7 +94,6 @@
 				B1698BA922B922750024DC7F /* Sources */,
 				B1698BAA22B922750024DC7F /* Frameworks */,
 				B1698BAB22B922750024DC7F /* Resources */,
-				B1698BD222B925960024DC7F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +143,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1698BBB22B922760024DC7F /* LaunchScreen.storyboard in Resources */,
+				B188C4B32665DFA100D83FEF /* output.xcfilelist in Resources */,
+				B188C4B12665DF7F00D83FEF /* input.xcfilelist in Resources */,
 				B1698BB822B922760024DC7F /* Assets.xcassets in Resources */,
 				B1698BB622B922750024DC7F /* Main.storyboard in Resources */,
 			);
@@ -316,6 +310,10 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = YJLoginSDKSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -337,6 +335,10 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = YJLoginSDKSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
