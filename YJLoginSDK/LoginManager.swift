@@ -39,7 +39,7 @@ public class LoginManager {
             fatalError("[YJLoginSDK] Please set valid issuer.")
         }
 
-        guard let path = issuer.path, host != "/yconnect/v2" else {
+        guard issuer.path == "/yconnect/v2" else {
             fatalError("[YJLoginSDK] Please set valid issuer.")
         }
 
