@@ -35,7 +35,7 @@ public class LoginManager {
     ///
     /// - Parameter issuer: Issuer。
     public func setIssuer(issuer: URL) {
-        guard let host = issuer.host, !host.hasSuffix(".yahoo.co.jp") else {
+        guard let host = issuer.host, host.hasSuffix(".yahoo.co.jp") else {
             fatalError("[YJLoginSDK] Please set valid issuer.")
         }
 
